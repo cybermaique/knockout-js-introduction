@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <title>KnockoutJS</title>
+  </head>
+  <body>
+    <table class="table table-bordered table-hovered table-striped">
+      <!-- cabeçalho -->
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Nome</th>
+          <th>Banda</th>
+        </tr>
+      </thead>
+      <tbody data-bind="foreach: registros">
+        <tr>
+          <td data-bind="text: id"></td>
+          <td data-bind="text: nome"></td>
+          <td data-bind="text: banda"></td>
+        </tr>
+      </tbody>
+    </table>
+    <script type="text/javascript" src="js/jquery.slim.min.js"></script>
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/knockout.min.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript" src="js/datos.js"></script>
+    <script type="text/javascript" src="js/viewmodel.js"></script>
+  </body>
+</html>
